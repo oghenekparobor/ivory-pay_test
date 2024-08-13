@@ -31,23 +31,27 @@ class Notifier extends _$Notifier with ChangeNotifier {
   var paymentInformation = GenericStore<Map<String, dynamic>?>(null);
 
   Future<bool> formatScanData(String data, [QRViewController? qrCtrl]) async {
-    var information = jsonDecode(jsonDecode(data));
+    try {
+      var information = jsonDecode(jsonDecode(data));
 
-    if (information is Map) {
-      if (information['data'].containsKey('address')) {
-        paymentInformation.emit(information as Map<String, dynamic>);
+      if (information is Map) {
+        if (information['data'].containsKey('address')) {
+          paymentInformation.emit(information as Map<String, dynamic>);
 
-        return true;
+          return true;
+        }
+
+        paymentInformation.emit(null);
+
+        return false;
       }
 
       paymentInformation.emit(null);
 
       return false;
+    } catch (e) {
+      return false;
     }
-
-    paymentInformation.emit(null);
-
-    return false;
   }
 
   var printers = GenericStore<List<BluetoothDevice>>([]);
