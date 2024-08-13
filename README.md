@@ -23,15 +23,17 @@ Below were the flutter plugins used.
 
 | Plugin | URL | Description |
 | ------ | ------ | ------ |
-| Intl | [Breakdance](https://breakdance.github.io/breakdance/) | Provides internationalization and localization facilities |
-| Riverpod | [Breakdance](https://pub.dev/packages/flutter_riverpod/) | A reactive caching and data-binding framework |
-| Go Router | [Breakdance](https://pub.dev/packages/go_router/) | A declarative routing package for Flutter | 
-| QR Scanner | [Breakdance](https://pub.dev/packages/qr_code_scanner/) | A plugin for detecting barcodes and QR codes |
-| Animate Do | [Breakdance](https://pub.dev/packages/animate_do/) | Beautiful animations inspired on Animate.css |
-| Bluetooth Print | [Breakdance](https://pub.dev/packages/bluetooth_print/) | BluetoothPrint is a bluetooth plugin to help developers build bluetooth thermal printer apps for both iOS and Android. |
-| Flutter Blue Plus | [Breakdance](https://pub.dev/packages/flutter_blue_plus/) | Flutter plugin for connecting and communicationg with Bluetooth Low Energy devices |
-| Permission Handler | [Breakdance](https://pub.dev/packages/permission_handler/) | Permission plugin for Flutter |
-| Rxdart | [Breakdance](https://pub.dev/packages/rxdart/) | RxDart is an implementation of the popular ReactiveX api for asynchronous programming |
+| Intl | [visit](https://pub.dev/packages/intl/) | Provides internationalization and localization facilities |
+| Riverpod | [visit](https://pub.dev/packages/flutter_riverpod/) | A reactive caching and data-binding framework |
+| Go Router | [visit](https://pub.dev/packages/go_router/) | A declarative routing package for Flutter | 
+| QR Scanner | [visit](https://pub.dev/packages/qr_code_scanner/) | A plugin for detecting barcodes and QR codes |
+| Animate Do | [visit](https://pub.dev/packages/animate_do/) | Beautiful animations inspired on Animate.css |
+| Bluetooth Print | [visit](https://pub.dev/packages/bluetooth_print/) | BluetoothPrint is a bluetooth plugin to help developers build bluetooth thermal printer apps for both iOS and Android. |
+| Flutter Blue Plus | [visit](https://pub.dev/packages/flutter_blue_plus/) | Flutter plugin for connecting and communicationg with Bluetooth Low Energy devices |
+| Permission Handler | [visit](https://pub.dev/packages/permission_handler/) | Permission plugin for Flutter |
+| Rxdart | [visit](https://pub.dev/packages/rxdart/) | RxDart is an implementation of the popular ReactiveX api for asynchronous programming |
+
+## QRCode sample
 
 ![N|Solid](https://res.cloudinary.com/oghenekparobor/image/upload/v1723574234/Untitled_vdzjhr.png)
 
