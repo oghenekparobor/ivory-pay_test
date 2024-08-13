@@ -70,12 +70,15 @@ class _SearchPrintersState extends ConsumerState<SearchPrinters> {
                         trailing: (selectedPrinter != null &&
                                 selectedPrinter.address == device.address &&
                                 connectStatus)
-                            ? Container(
-                                width: 20.w,
-                                height: 20.h,
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: Colors.green,
+                            ? Pulse(
+                                infinite: true,
+                                child: Container(
+                                  width: 16.w,
+                                  height: 16.h,
+                                  decoration: const BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.green,
+                                  ),
                                 ),
                               )
                             : null,
