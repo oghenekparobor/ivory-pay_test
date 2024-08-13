@@ -7,7 +7,6 @@ import 'package:flutter_blue_plus/flutter_blue_plus.dart' as bluetooth;
 import 'package:intl/intl.dart';
 import 'package:ivorypay_test/core/permission/handler.dart';
 import 'package:ivorypay_test/core/storage/generic.dart';
-import 'package:logger/web.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -73,8 +72,6 @@ class Notifier extends _$Notifier with ChangeNotifier {
       bluetoothPrint
           .scan(timeout: const Duration(seconds: 30))
           .listen((device) {
-        Logger().d(device.toJson());
-
         printers.value.add(device);
         printers.refresh();
       });
@@ -86,9 +83,7 @@ class Notifier extends _$Notifier with ChangeNotifier {
           printerConnectionStatus.emit(false);
         }
       });
-    } catch (e) {
-      Logger().e(e);
-    }
+    } catch (e) {}
   }
 
   void rescanForPrinter() {

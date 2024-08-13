@@ -2,11 +2,9 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:glass/glass.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ivorypay_test/core/extension/context.dart';
 import 'package:ivorypay_test/core/extension/widget.dart';
-import 'package:ivorypay_test/core/routes/route.dart';
 import 'package:ivorypay_test/presentation/notifier/notifier.dart';
 import 'package:ivorypay_test/presentation/widgets/button.dart';
 import 'package:ivorypay_test/presentation/widgets/notification.dart';
@@ -105,9 +103,6 @@ class ScanResults extends ConsumerWidget {
                       8.verticalSpace,
                     ],
                   ),
-                ).asGlass(
-                  tintColor: Colors.green.withOpacity(.2),
-                  clipBorderRadius: BorderRadius.circular(30.r),
                 ),
                 16.verticalSpace,
                 Row(

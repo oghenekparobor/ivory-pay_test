@@ -1,16 +1,37 @@
-# ivorypay_test
+# IVORY PAY
 
-A new Flutter project.
+![N|Solid](https://res.cloudinary.com/oghenekparobor/image/upload/v1723574861/screen-20240813-191230-ezgif.com-video-to-gif-converter_1_ficltq.gif)
 
-## Getting Started
+## Features
+- QRScanner
+- Bluetooth technology
 
-This project is a starting point for a Flutter application.
+### Project Setup
+- Click on the code button to see the repo link
+- Open your terminal and run ``` git clone https://github.com/oghenekparobor/ivory-pay_test.git ```
+- Change to the flutter project ```cd ivory-pay_test ```
+- Install the flutter plugins ```flutter pub get```
+- We either you physical device connected or an emulator run the project ```flutter run```
+- Using the QRCode below to test for a valid transaction
 
-A few resources to get you started if this is your first Flutter project:
+> This project testing was incomplete due to unavailablity of a Terminal POS printer to test with.
+> But all implementations has been made according to the documentation's requirements
+> Edge cases were covered (i.e. user's bluetooth turned off)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Plugins
+Below were the flutter plugins used.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Plugin | URL | Description |
+| ------ | ------ | ------ |
+| Intl | [Breakdance](https://breakdance.github.io/breakdance/) | Provides internationalization and localization facilities |
+| Riverpod | [Breakdance](https://pub.dev/packages/flutter_riverpod/) | A reactive caching and data-binding framework |
+| Go Router | [Breakdance](https://pub.dev/packages/go_router/) | A declarative routing package for Flutter | 
+| QR Scanner | [Breakdance](https://pub.dev/packages/qr_code_scanner/) | A plugin for detecting barcodes and QR codes |
+| Animate Do | [Breakdance](https://pub.dev/packages/animate_do/) | Beautiful animations inspired on Animate.css |
+| Bluetooth Print | [Breakdance](https://pub.dev/packages/bluetooth_print/) | BluetoothPrint is a bluetooth plugin to help developers build bluetooth thermal printer apps for both iOS and Android. |
+| Flutter Blue Plus | [Breakdance](https://pub.dev/packages/flutter_blue_plus/) | Flutter plugin for connecting and communicationg with Bluetooth Low Energy devices |
+| Permission Handler | [Breakdance](https://pub.dev/packages/permission_handler/) | Permission plugin for Flutter |
+| Rxdart | [Breakdance](https://pub.dev/packages/rxdart/) | RxDart is an implementation of the popular ReactiveX api for asynchronous programming |
+
+![N|Solid](https://res.cloudinary.com/oghenekparobor/image/upload/v1723574234/Untitled_vdzjhr.png)
+

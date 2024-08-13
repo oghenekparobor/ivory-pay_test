@@ -8,7 +8,6 @@ import 'package:ivorypay_test/core/extension/widget.dart';
 import 'package:ivorypay_test/presentation/notifier/notifier.dart';
 import 'package:ivorypay_test/presentation/widgets/button.dart';
 import 'package:ivorypay_test/presentation/widgets/notification.dart';
-import 'package:logger/logger.dart';
 
 class SearchPrinters extends ConsumerStatefulWidget {
   const SearchPrinters({super.key});
@@ -95,7 +94,6 @@ class _SearchPrintersState extends ConsumerState<SearchPrinters> {
                               text: 'Print',
                               onTap: () {
                                 notifier.printTransactionReceipt().then((res) {
-                                  Logger().d(res);
                                   if (context.mounted) {
                                     context.notify.addNotification(
                                       const NotificationTile(
