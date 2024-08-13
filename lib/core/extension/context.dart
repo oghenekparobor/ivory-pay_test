@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ivorypay_test/notification_wrapper.dart';
 
 extension CxtExtension on BuildContext {
   // theme related
@@ -16,4 +17,6 @@ extension CxtExtension on BuildContext {
   FocusScopeNode get focusScope => FocusScope.of(this);
 
   Object get arg => ModalRoute.of(this)!.settings.arguments!;
+
+  NotificationStackState get notify => NotificationStack.of(this);
 }
