@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ivorypay_test/core/extension/context.dart';
-import 'package:ivorypay_test/core/permission/handler.dart';
 import 'package:ivorypay_test/presentation/notifier/notifier.dart';
 import 'package:ivorypay_test/presentation/widgets/notification.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart' as qr;
